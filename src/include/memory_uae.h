@@ -6,6 +6,9 @@
  * Copyright 1995 Bernd Schmidt
  */
 
+#ifndef MEMORY_UAE_H
+#define MEMORY_UAE_H
+
 #ifndef HAS_UAE_PREFS_STRUCT
 struct uae_prefs;
 #endif // HAS_UAEPREFS_STRUCT
@@ -462,3 +465,6 @@ extern void memcpyah (uae_u8 *dst, uaecptr src, int size);
 
 extern uae_s32 getz2size (struct uae_prefs *p);
 extern ULONG getz2endaddr (void);
+
+#endif
+
